@@ -1,0 +1,161 @@
+/*navigasi*/
+.navbar{
+	border-bottom: 3px solid #ffb900
+}
+.nav-item{
+	margin: auto;
+	padding: 7px;
+}
+.nav-item:hover{
+	background-color: #ffb900
+}
+.nav-pills .nav-item:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+.nav-pills .nav-item.active{
+	background-color: #ffffffdb;
+	color: #000!important
+}
+.navbar.navanim{
+	-webkit-animation: navanim 1s;
+	-o-animation: navanim 1s;
+	animation: navanim 1s;
+	height: 65px;
+}
+.navbar.navanim img{
+	width: 80%;
+}
+.navbar .absolute-right-50{
+	position: absolute;
+	right: 50px
+}
+
+/*breadcrumb*/
+.breadcrumb{
+    border-radius: 0px;
+}
+/*card custom*/
+.card{
+	border-width: 0px
+}
+.card-body{
+	border: 1px solid rgba(0,0,0,.125);
+}
+.card-header{
+	background-image: url('../../assets/img/bg-judul2.png');
+	color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Tw Cen MT;
+	background-color: transparent;
+	font-size: 25px;
+	padding: 0;
+	padding-top: 10px
+}
+
+
+.container-fluid.main{
+	position: relative;
+	height: 100vh;
+	padding: 0
+}
+
+/*carousel*/
+.carousel-main .carousel-item{
+	background-size: cover;
+	height: 86.7vh;
+}
+.carousel-caption{
+	bottom: 40%;
+	left: 9%;
+	text-align: left;
+}
+
+
+/*button to top*/
+.to-top a{
+	position: fixed;
+	right: 15px;
+	bottom: 4%;
+	cursor: pointer;
+}
+
+
+
+/* footer */
+footer{
+	cursor: default;
+}
+
+
+/*custom*/
+.dn{
+	display: none;
+}
+.db{
+	display: block;
+}
+.bg-blue-umb{
+	color: #fff;
+	background-color: #495057;
+}
+.font-size-65{
+	text-shadow: 3px 3px 3px #404040;
+	font-size: 65px
+}
+.text-indent-30{
+	text-indent: 30px
+}
+.backgorund-akademik{
+	background-image: url('../../assets/img/IMG_0332.JPG');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.backgorund-pendaftaran{
+	background-attachment: fixed;
+	background-image: url('../../assets/img/regis.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.list-none{
+	list-style: none;
+	padding: 0
+}
+li{
+	padding-bottom: 7px
+}
+.container-fluid.main.height-auto{
+	height: 100%;
+}
+
+
+/*media queries and keyframes*/
+
+
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-brand.small {
+	    display: none;
+	}
+}
+@media (max-width: 992px){
+	.navbar-expand-lg .navbar-brand.large {
+	    display: none;
+	}
+}
+@keyframes navanim{
+	from{
+		transform: translate(0px , -100px);
+	}
+	to{
+		transform: translate(0px , 0px);
+	}
+}
+#accordion .card{
+	background-color: transparent;
+}
+#accordion .card .collapse{
+	background-color: #ffffffdb;
+}
